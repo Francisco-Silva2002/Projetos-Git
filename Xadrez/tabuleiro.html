@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabuleiro e Peças</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="xac.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script type="text/javascript">
+    function certoF() {
+      alert("Escolha uma peça!!");
+    }
+  </script>
+
+  <style type="text/css">
+    table#pecas {
+  border-style: solid;
+  border-color: black;
+  padding: 2px;
+  margin-left: 50%;
+  font-size: 30px;
+}
+  img#tabu {
+  width: 26%;
+  float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+    max-width: 50%; 
+}
+  img#distro{
+    margin-left: 40%;
+  }
+
+
+    iframe {
+      width: 40%;
+      height: 415px;
+      border: none;
+      overflow: hidden;
+  } 
+  </style>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://www.clickjogos.com.br/jogos/master-chess" target="_blanck">Xadrez <i class="fas fa-chess"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="xadrez.html">O jogo <i class="fas fa-square-full"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="tabuleiro.html">Tabuleiro e Peças <i class="fas fa-chess-board"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movimentos <i class="fas fa-arrows-alt"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="movimentos/mp.html">Peão <i class="fas fa-chess-pawn"></i></a>
+
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mc.html">Cavalo <i class="fas fa-chess-knight"></i></a>
+          
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mt.html">Torre <i class="fas fa-chess-rook"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mb.html">Bispo <i class="fas fa-chess-bishop"></i></a>
+
+			<div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrai.html">Rainha <i class="fas fa-chess-queen"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrei.html">Rei <i class="fas fa-chess-king"></i></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="promocao.html">Promoção do Peão <i class="fas fa-grin-squint"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="captura.html">Captura <i class="fas fa-fist-raised"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="especiais.html">Movimentos Especiais <i class="fas fa-star"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="obj.html">Objetivos do Jogo <i class="fas fa-trophy"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+	<img src="img/tabuleiro.jpg" id="tabu">
+  <p>O tabuleiro de xadrez conta com 64 casas distribuidas em 8 colunas (verticais) e 8 fileiras (horizontais), cada uma com 8 casas. As casas são alternadamente escuras e claras. A primeira casa no extremo esquerdo do tabuleiro deve ser uma casa preta e a última casa no extremo direito, uma casa branca.</p>
+
+  <p>Cada coluna é designada por uma letra (a a h), enquanto as fileiras são designadas por um número (1 a 8). Dessa forma cada casa é designada pela letra e número correspondentes a sua coluna e fileira (a1, b6, f5, etc.). Esse é o sistema padrão de notação em competições oficiais.</p>
+  <p>Cada jogador possui 16 peças, também divididas em claras e escuras.  As peças são, por ordem de valor:
+</p>
+  <table id="pecas" border="1px">
+    <tr>
+      <td><i class="fas fa-chess-king"></i></td>
+      <td>1 Rei</td>
+      <td>0</td>
+    </tr>
+
+    <tr>
+      <td><i class="fas fa-chess-queen"></i></td>
+      <td>1 Rainha</td>
+      <td>9</td>
+    </tr>
+
+    <tr>
+      <td><i class="fas fa-chess-rook"></td>
+      <td>2 Torres</td>
+      <td>5</td>
+    </tr>
+
+    <tr>
+      <td><i class="fas fa-chess-bishop"></td>
+      <td>2 Bispos</td>
+      <td>3</td>
+    </tr>
+
+    <tr>
+      <td><i class="fas fa-chess-knight"></td>
+      <td>2 Cavalos</td>
+      <td>3</td>
+    </tr>
+
+    <tr>
+      <td><i class="fas fa-chess-pawn"></td>
+      <td>8 Peões</td>
+      <td>1</td>
+    </tr>
+  </table>
+  <p>No início da partidas, as peças são distribuídas no tabuleiro da seguinte forma: as peças brancas são posicionadas na fileira 1, protegidas pela fileira de peões em 2, enquanto as peças pretas ficam na fileira 8, e seus peões na 7. Observe abaixo:</p>
+  <img id="distro" src="img/tabuleiro2.jpg" alt="Peças no tabuleiro" title="Peças no tabuleiro" usemap="tabuleiro">
+
+  <section>
+    <map name="tabuleiro">
+      <area shape="rect" coords="4,205,270,236" href="posicao.html#kn" target="levapag">
+      <area shape="rect" coords="5,36,270,71" href="posicao.html#kn" target="levapag">
+      <!--Peões-->
+      <area shape="rect" coords="8,5,38,37" href="posicao.html#toor" target="levapag">
+      <area shape="rect" coords="238,7,270,35" href="posicao.html#toor" target="levapag">
+      <area shape="rect" coords="7,240,37,268" href="posicao.html#toor" target="levapag">
+      <area shape="rect" coords="240,238,270,268" href="posicao.html#toor" target="levapag">
+      <!--Torres-->
+      <area shape="rect" coords="38,4,69,37" href="posicao.html#cav" target="levapag">
+      <area shape="rect" coords="205,4,236,35" href="posicao.html#cav" target="levapag">
+      <area shape="rect" coords="40,239,71,267" href="posicao.html#cav" target="levapag">
+      <area shape="rect" coords="206,239,235,269" href="posicao.html#cav" target="levapag">
+      <!--Cavalos-->
+      <area shape="rect" coords="73,5,102,34" href="posicao.html#bis" target="levapag">
+      <area shape="rect" coords="173,5,202,33" href="posicao.html#bis" target="levapag">
+      <area shape="rect" coords="73,239,104,268," href="posicao.html#bis" target="levapag">
+      <area shape="rect" coords="173,240,202,268" href="posicao.html#bis" target="levapag">
+      <!--Bispos-->
+      <area shape="rect" coords="107,4,136,36" href="posicao.html#rai" target="levapag">
+      <area shape="rect" coords="107,238,138,268" href="posicao.html#rai" target="levapag">
+      <!--Rainha-->
+      <area shape="rect" coords="139,7,169,33" href="posicao.html#ree" target="levapag">
+      <area shape="rect" coords="139,239,169,269" href="posicao.html#ree" target="levapag">
+      <!--Rei-->
+      <area shape="rect" coords="7,72,268,208" onclick="certoF();">
+    </map>
+    <br>
+    <p>Clique em alguma das peças para saber qual é a sua posição no tabuleiro</p>
+    <iframe src="posicao.html" name="levapag" scrolling="no"></iframe>
+  </section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

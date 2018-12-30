@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>O jogo de Xadrez</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="xac.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://www.clickjogos.com.br/jogos/master-chess" target="_blanck">Xadrez <i class="fas fa-chess"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#t">O jogo <i class="fas fa-square-full"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tabuleiro.html">Tabuleiro e Peças <i class="fas fa-chess-board"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movimentos <i class="fas fa-arrows-alt"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="movimentos/mp.html">Peão <i class="fas fa-chess-pawn"></i></a>
+
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mc.html">Cavalo <i class="fas fa-chess-knight"></i></a>
+          
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mt.html">Torre <i class="fas fa-chess-rook"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mb.html">Bispo <i class="fas fa-chess-bishop"></i></a>
+
+			<div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrai.html">Rainha <i class="fas fa-chess-queen"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrei.html">Rei <i class="fas fa-chess-king"></i></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="promocao.html">Promoção do Peão <i class="fas fa-grin-squint"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="captura.html">Captura <i class="fas fa-fist-raised"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="especiais.html">Movimentos Especiais <i class="fas fa-star"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="obj.html">Objetivos do Jogo <i class="fas fa-trophy"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+	<h1 id="tituloP"><a id="t">O JOGO</a></h1>
+
+		<p>O Xadrez é um jogo tão antigo que, durante todos os anos de sua existência, várias foram as histórias associadas a sua origem.</p>
+
+		<p>A primeira história que se é contada mundialmente se passa na Índia. Havia uma pequena cidade chamada Taligana, e o único filho do poderoso <i>rajá</i> foi morto em uma sangrenta batalha. O <i>rajá</i> entrou em depressão e nunca havia conseguido superar a perda do filho. O grande problema era que o <i>rajá</i> não só estava morrendo aos poucos, como também estava se descuidando em relação ao seu reino. Era uma questão de tempo até que o reino caísse totalmente.</p>
+
+		<p>Vendo a queda do reino, um brâmane chamado <i>Lahur Sessa</i>, certo dia foi até o rei e lhe apresentou um tabuleiro contendo 64 quadrados, brancos e pretos, além de diversas peças que representavam fielmente as tropas do seu exército, a infantaria, a cavalaria, os carros de combate, os condutores de elefantes, o principal <i>vizir</i> e o próprio <i>rajá</i>.</p>
+
+		<p>O sacerdote disse ao <i>rajá</i> que tal jogo poderia acalmar seu espírito e que sem dúvida alguma, iria curar-se da depressão. De fato, tudo o que o brâmane disse acontecera, o <i>rajá</i> voltou a governar seu reino, tirando a crise de seu caminho.</p>
+		<img id="origem" src="img/Chaturanga.jpg" align="right" title="Jogo de Chaturanga">
+
+		<p>Era inexplicável como aquilo tudo aconteceu, sendo um único tabuleiro com peças o responsável por tirar a tristeza do <i>rajá</i>. Como recompensa, o brâmane foi agraciado com a oportunidade de pedir o que quisesse. Logo de primeira, ele recusou tal oferta, pois achava que não fosse merecedor de tal proposta, mas mediante insistência do <i>rajá</i>, ele fez um simples pedido. O brâmane pediu simplesmente um grão de trigo para a primeira casa do tabuleiro, dois para a segunda, quatro para a terceira, oito para a quarta e assim sucessivamente até a última casa. O <i>rajá</i> chegou a achar graça, tamanha a ingenuidade do pedido.</p>
+
+		<p>Entretanto, o humilde pedido do brâmane não era tão humilde assim. Após fazerem vários cálculos de quanto trigo eles teriam que dar para ele, descobriram que seria necessário toda a safra do reino por incríveis dois mil anos para atender ao pedido do sacerdote. Impressionado com a inteligência do brâmane, o <i>rajá</i> o convidou para ser o principal <i>vizir</i> (espécie de ministro, conselheiro do <i>rajá</i>) do reino, sendo perdoado por <i>Sessa</i> de sua grande dívida em trigo.</p>
+
+		<p>Na verdade, o que o brâmane apresentou para o <i>rajá</i> não foi o jogo de xadrez, foi a <i>chaturanga</i>, uma das principais variantes do jogo de xadrez moderno.</p>
+		
+		<img id="ares" src="img/ares.jpg" alt="Ares, deus da guerra" title="Ares, deus da guerra">
+
+		<p>Outra grande possibilidade que se apresenta em diversas histórias sobre a origem do Xadrez, é que <i>Ares</i>, o deus da guerra, teria criado um tabuleiro para testar suas táticas de guerra (que eram bem limitadas, pois <i>Ares</i> nunca foi conhecido por ter tática nas suas batalhas, ele era simplesmente agressivo, atacando sem precisão alguma na maioria das vezes). Entretanto, cada peça do tabuleiro representava uma parte do seu exército, e assim foi, até que <i>Ares</i> teve um filho com uma mortal, e passou para ele os fundamentos do jogo. A partir de então, o jogo teria chegado ao conhecimento dos mortais.</p>
+
+		<p>É sabido que entre 1450 e 1850, o Xadrez começou a ter mudanças visíveis em relação ao que conhecemos hoje em dia. Foi nesse período que diversas peças ganharam movimentos que conhecemos atualmente, claro, todos esses movimentos e peças tendo como origem a <i>Chaturanga</i>.</p>
+
+		<p>O elefante (o antecessor do moderno bispo) somente podia mover-se em saltos por duas casas nas diagonais. O <i>vizir</i> (o antecessor da dama) somente uma casa nas diagonais. Os peões não podiam andar duas casas em seu primeiro movimento e não existia ainda o roque. Os peões somente podiam ser promovidos a <i>vizir</i>, que era a peça mais fraca, depois do peão, em razão da sua limitada mobilidade.</p>
+
+		<p>As regras do Xadrez que conhecemos hoje começaram a ser feitas em 1475, só não se sabe ao certo onde ocorreu esse início. Alguns historiadores divergem entre Espanha e Itália.</p>
+
+		<p>Foi neste período que os peões ganharam a mobilidade que conhecemos hoje em dia, que se resume em mover-se duas casas no seu primeiro movimento e tomar outros peões <i>en passant</i>. Nessa época <img id="comp" src="img/competicao.jpg" alt="Competição de Xadrez" title="Competição de Xadrez"> também foram definido os novos movimentos dos bispos e da rainha e, o mais importante, a rainha tornou-se a peça mais importante do jogo, sendo a única capaz de se movimentar para qualquer lado e avançar ou recuar quantas casas quiser. Os movimento das demais peças, juntamente com o resto das regras que englobam todo o Xadrez, só foram formalmente modificadas no meio do século XIX, e tais regras ainda se mantêm até hoje.</p>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Movimentos Especiais</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="xac.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://www.clickjogos.com.br/jogos/master-chess" target="_blanck">Xadrez <i class="fas fa-chess"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="xadrez.html">O jogo <i class="fas fa-square-full"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tabuleiro.html">Tabuleiro e Peças <i class="fas fa-chess-board"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Movimentos <i class="fas fa-arrows-alt"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="movimentos/mp.html">Peão <i class="fas fa-chess-pawn"></i></a>
+
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mc.html">Cavalo <i class="fas fa-chess-knight"></i></a>
+          
+          <div class="dropdown-divider"></div>
+          
+          <a class="dropdown-item" href="movimentos/mt.html">Torre <i class="fas fa-chess-rook"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mb.html">Bispo <i class="fas fa-chess-bishop"></i></a>
+
+			<div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrai.html">Rainha <i class="fas fa-chess-queen"></i></a>
+          
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="movimentos/mrei.html">Rei <i class="fas fa-chess-king"></i></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="promocao.html">Promoção do Peão <i class="fas fa-grin-squint"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="captura.html">Captura <i class="fas fa-fist-raised"></i></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Movimentos Especiais <i class="fas fa-star"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="obj.html">Objetivos do Jogo <i class="fas fa-trophy"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<h1 align="center">Movimentos Especiais</h1>
+<h3>Roque</h3>
+<p>É um movimento que envolve a torre e o rei. É o único movimento do xadrez em que você mexe duas peças ao mesmo tempo e que o rei anda duas casas. O objetivo do roque é tirar o rei do centro do tabuleiro e deixá-lo num canto que é mais protegido, ao mesmo tempo colocar a torre no centro do tabuleiro para facilitar seus ataques.</p>
+<img src="img/roque_antes.jpg" style="margin-right: 10%;">
+<img src="img/roque_depois.jpg">
+<p>No roque o rei anda duas casas em direção à torre e a torre pula o rei ficando ao seu lado.</p>
+<p>O roque grande é aquele que o rei anda em direção à torre mais distante.</p>
+<p>O roque pequeno é aquele em que o rei anda em direção à torre mais próxima.</p>
+
+<h4>Condições para fazer o roque:</h4>
+<ul>
+<li>O rei não pode ter se movimentado nenhuma vez;</li>
+<li>A torre com quem se quer rocar não pode ter feito nenhum movimento;</li>
+<li>Não pode haver peças entre o rei e a torre;</li>
+<li>O rei não pode estar em xeque;</li>
+<li>O rei não pode passar, nem terminar em casa que esteja sob o ataque de peça adversária.</li>
+</ul>
+<br>
+<h3>“en passant” ou “Ao passar”</h3>
+<p>É uma forma especial de captura que o peão faz quando esse está na 5ª fila (em relação ao jogador) e um peão adversário avança duas casas “passando” do seu lado.</p>
+<img src="img/enp1.jpg" style="margin-right: 10%;" alt="Passo 1" title="Passo 1">
+<img src="img/enp2.jpg" style="margin-right: 10%;" alt="Passo 2" title="Passo 2">
+<img src="img/enp3.jpg" style="margin-right: 10%;" alt="Passo 3" title="Passo 3">
+<br>
+<h4>Condições para capturar “en passant”:</h4>
+<ul>
+<li>O seu peão deve estar na 5ª fila;</li>
+<li>O peão adversário deve avançar duas casas passando ao seu lado;</li>
+<li>Somente no lance imediatamente após o avanço do peão adversário.</li>
+</ul>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
