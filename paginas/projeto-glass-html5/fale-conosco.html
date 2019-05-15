@@ -42,7 +42,7 @@
 </hgroup>
 </header>
 
-<form id="fContato" oninput="calcTotal();">
+<form id="fContato" oninput="calcTotal();" method="get" action="valida.php">
 <fieldset id="usuario">
 <legend>Identificação do Usuário</legend>
     <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="60" placeholder="Nome Completo"></p>
@@ -106,7 +106,7 @@
     <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
 </fieldset>
 
-<input type="image" src="_imagens/botao-enviar.png" name="Enviar">
+<input type="image" src="_imagens/botao-enviar.png" name="Enviar" onclick="valida.php">
 </form>
 
 <footer id="rodape">

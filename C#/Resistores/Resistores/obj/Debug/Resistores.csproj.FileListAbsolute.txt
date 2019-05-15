@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\Resistores\Resistores\bin\Debug\Resistores.exe.config
+C:\Users\franc\source\repos\Resistores\Resistores\bin\Debug\Resistores.exe
+C:\Users\franc\source\repos\Resistores\Resistores\bin\Debug\Resistores.pdb
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.csprojAssemblyReference.cache
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.Form1.resources
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.Properties.Resources.resources
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.exe
+C:\Users\franc\source\repos\Resistores\Resistores\obj\Debug\Resistores.pdb
